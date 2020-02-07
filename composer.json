@@ -1,5 +1,5 @@
 {
-    "name": "ycamposde/greenterycam",
+    "name": "finacontcorp/greenterfin",
     "description": "Implementación de la Facturacion Electrónica SUNAT - Perú",
     "keywords": ["sunat", "xml", "facturacion electronica", "ubl21", "ubl20"],
     "license": "MIT",
@@ -12,17 +12,21 @@
         {
             "name": "Yerson Y. Campos De la cruz",
             "email": "ycamposde@gmail.com"
+        },
+        {
+            "name": "Finacontcorp",
+            "email": "appmanager@finacontcorp.com"
         }
     ],
-    "homepage": "https://github.com/ycamposde/greenter",
+    "homepage": "https://github.com/finacontcorp/greenter",
     "type": "library",
     "require": {
 		"php": ">=5.5.9",
         "ext-dom": "*",
-        "greenterycam/xmldsig": "7.0.1",
-        "greenterycam/core": "7.0.1",
-        "greenterycam/ws": "7.0.1",
-        "greenterycam/xml": "7.0.3"
+        "greenterfin/xmldsig": "1.0.0",
+        "greenterfin/core": "1.0.0",
+        "greenterfin/ws": "1.0.0",
+        "greenterfin/xml": "1.0.0"
     },
 	  "require-dev": {
         "phpunit/phpunit": ">=4.8 < 6.0"
