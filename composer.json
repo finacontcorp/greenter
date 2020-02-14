@@ -23,10 +23,10 @@
     "require": {
 		    "php": ">=5.5.9",
         "ext-dom": "*",
-        "greenterfin/xmldsig": "1.0.*",
-        "greenterfin/core": "1.0.*",
-        "greenterfin/ws": "1.0.*",
-        "greenterfin/xml": "1.0.*"
+        "greenterfin/xmldsig": "1.*.*",
+        "greenterfin/core": "1.*.*",
+        "greenterfin/ws": "1.*.*",
+        "greenterfin/xml": "1.*.*"
     },
 	  "require-dev": {
         "phpunit/phpunit": ">=4.8 < 6.0"
