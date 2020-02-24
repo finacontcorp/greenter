@@ -24,9 +24,9 @@
 		    "php": ">=5.5.9",
         "ext-dom": "*",
         "greenterfin/xmldsig": "1.0.0",
-        "greenterfin/core": "1.0.0",
+        "greenterfin/core": "1.0.3",
         "greenterfin/ws": "1.0.0",
-        "greenterfin/xml": "1.0.0"
+        "greenterfin/xml": "1.0.2"
     },
 	  "require-dev": {
         "phpunit/phpunit": ">=4.8 < 6.0"
