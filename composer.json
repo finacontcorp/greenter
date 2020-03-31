@@ -26,7 +26,7 @@
         "greenterfin/xmldsig": "1.0.0",
         "greenterfin/core": "1.0.4",
         "greenterfin/ws": "1.0.0",
-        "greenterfin/xml": "1.0.4"
+        "greenterfin/xml": "1.0.5"
     },
 	  "require-dev": {
         "phpunit/phpunit": ">=4.8 < 6.0"
