@@ -122,6 +122,13 @@ class FeFactory implements FactoryInterface
      */
     public function send(DocumentInterface $document)
     {
+		    if (isset($document->xml) && $document->xml != '') {
+				    $pStart = strpos($document->xml, "<cbc:IssueTime>");
+				    $pEnd = strpos($document->xml, "</cbc:IssueTime>");
+				    $IssueTime = substr($document->xml, $pStart + 15, $pEnd - $pStart - 15);
+				    $document->IssueTime = $IssueTime;
+		    }
+
         $xml = $this->getXmlSigned($document);
 
         return $this->sender->send($document->getName(), $xml);
@@ -150,9 +157,11 @@ class FeFactory implements FactoryInterface
      */
     public function getXmlSigned(DocumentInterface $document)
     {
+	      $hash_existing = isset($document->hash) ? $document->hash: null;
+
         $xml = $this->builder->build($document);
 
-        $this->lastXml = $this->signer->signXml($xml);
+        $this->lastXml = $this->signer->signXml($xml, $hash_existing);
 
         return $this->lastXml;
     }
